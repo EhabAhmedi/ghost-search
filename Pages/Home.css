@@ -1,0 +1,95 @@
+#light{
+
+}
+
+#dark{
+  background-color: #242424;
+}
+
+
+.home{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  
+}
+.home__header a{
+  margin-right: 20px;
+  text-decoration: inherit;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 15px;
+}
+.DarkTheme__logo{
+  flex-direction: column;
+ 
+}
+.DarkTheme__logo > p{
+  font-size: 10px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+/*Dark Theme*/
+
+#dark  .home__header a{
+  color: aliceblue;
+}
+
+#dark .Home__logo{
+  filter: invert();
+}
+#light .Home__logo{
+  color: black;
+}
+#dark .Home__darkButton{
+  filter: invert();
+}
+#dark .avatar{
+  filter: invert();
+}
+#dark .DarkTheme__logo > p{
+  color: white;
+}
+
+
+
+
+
+
+.home__header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  align-items: center;
+}
+
+.home__header a:hover{
+  text-decoration: underline;
+}
+.home__headerRight{
+  display: flex;
+  align-items: center;
+  min-width: 13vw;
+  justify-content: space-between;
+}
+.home__headerRight > .MuiSvgIcon-root{
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+.home__body{
+  flex: 1;
+  display: flex;
+  margin-top: 10%;
+  flex-direction: column;
+}
+
+.home__body > img{
+  object-fit: contain;
+  height: 100px;
+}
+
+.Home__darkButton{
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
